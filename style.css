@@ -1,0 +1,128 @@
+html, body {
+  margin: 0;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+body {
+  padding: 16px;
+  height: calc(100% - 32px);
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.select {
+    -webkit-touch-callout: initial;
+    -webkit-user-select: initial;
+    -khtml-user-select: initial;
+    -moz-user-select: initial;
+    -ms-user-select: initial;
+    user-select: initial;
+}
+
+.scroll {
+  overflow: auto;
+}
+.scroll::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+.scroll::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #bdbdbd;
+}
+
+.left, .right {
+  background-color: #ffffff;
+  padding: 8px;
+  height: calc(100% - 16px);
+  display: inline-block;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  vertical-align: top;
+}
+
+.left {
+  margin-right: 16px;
+  width: 400px;
+}
+
+.left-list {
+    border-collapse: collapse; 
+    height: calc(100% - 40px);
+    width: 100%;
+}
+
+.left-list-body {
+  max-height: 100%;
+  display: block;
+  width: 100%;
+}
+
+.left-list-body-row {
+    width: 100%;  
+}
+
+.left-list-body-row:hover {
+  cursor: pointer;
+  background-color: #e8e8e8;
+  transition: background-color .3s ease;
+}
+
+.left-list-body-row-cell {
+  padding: 8px;
+  border-bottom: 1px solid #e8e8e8;
+  width: 25%;
+  text-align: center;
+}
+
+.last {
+  border: none;
+}
+
+.right {
+  width: calc(100% - 452px);
+}
+
+.right-view {
+  border: none;
+}
+
+.left-controls {
+  padding-bottom: 8px;
+}
+
+.selected {
+  background-color: #dddddd;
+}
+
+.controls {
+  margin-right: 16px;
+}
+
+.button {
+    height: 32px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #4285f4;
+    color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+.button:hover {
+    transition: all .3s ease;
+    background-color: #3b77db;
+}
+.button:active {
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.2);    
+    transition: background-color .3s ease;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="left noselect">
+      <div class="left-controls">
+        <button class="button controls" id="price">Price</button><button class="button controls" id="commute">Commute</button>
+      </div>
+      <table class="left-list">
+        <tbody class="left-list-body scroll" id="list-body"></tbody>
+      </table>
+    </div>
+    <div class="right">
+      <iframe id="right-view" class="right-view scroll" src="" width = "100%" height = "100%"></iframe>
+    </div>
+    <script src="closure/closure/goog/base.js"></script>
+    <script src="script.js"></script>
+    <script>
+      new h.Control().init();
+    </script>
+  </body>
+</html> 
